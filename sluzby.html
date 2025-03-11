@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Služby - ZZ Therm</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <img src="" alt="ZZ Therm Logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="onas.html">O nás</a></li>
+            <li><a href="sluzby.html" class="active">Služby</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="fotografie.html">Fotografie</a></li>
+        </ul>
+    </nav>
+    <div class="contact-info">
+        <a href="mailto:zdenek@zztherm.cz" class="contact-link">✉ zdenek@zztherm.cz</a>
+        <a href="tel:+420735401815" class="contact-link">📞 735 401 815</a>
+    </div>
+</header>
+
+<section class="content-section services">
+    <h2>Služby</h2>
+    <p>Poskytujeme širokou škálu vodoinstalatérských služeb pro soukromé domácnosti, firmy a průmyslové objekty.</p>
+
+    <div class="service-grid">
+        <div class="service-item">
+            <img src="fittings_12029545.png" alt="Vodovodní potrubí">
+            <h3>Montáž a opravy vodovodních potrubí</h3>
+            <p>Provádíme odbornou montáž, opravy a údržbu vodovodního potrubí...</p>
+            <a href="#detail1" class="btn-outline toggle-detail">Číst více</a>
+            <div class="service-detail" id="detail1">
+                <p>
+                    Nabízíme komplexní služby v oblasti montáže a oprav vodovodních potrubí. Naše práce zahrnuje:
+                </p>
+                <ul>
+                    <li>Instalaci nového vodovodního potrubí</li>
+                    <li>Opravy starých a poškozených rozvodů</li>
+                    <li>Detekci a opravu netěsností</li>
+                    <li>Modernizaci vodovodního systému</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="plumber.png" alt="Topení">
+            <h3>Instalace a údržba topných systémů</h3>
+            <p>Profesionální instalace a údržba vytápěcích systémů pro domácnosti a firmy...</p>
+            <a href="#detail2" class="btn-outline toggle-detail">Číst více</a>
+            <div class="service-detail" id="detail2">
+                <p>
+                    Poskytujeme široké spektrum služeb spojených s vytápěním:
+                </p>
+                <ul>
+                    <li>Instalace kotlů, radiátorů a podlahového topení</li>
+                    <li>Pravidelná údržba a servis topných systémů</li>
+                    <li>Optimalizace vytápění pro nižší spotřebu energie</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="tool_13787218.png" alt="Odstranění zátek">
+            <h3>Odstraňování zátek v odpadních potrubích</h3>
+            <p>Rychlé a efektivní čištění ucpaných potrubí bez nutnosti demolice...</p>
+            <a href="#detail3" class="btn-outline toggle-detail">Číst více</a>
+            <div class="service-detail" id="detail3">
+                <p>
+                    Ucpané odpady jsou častým problémem. Nabízíme:
+                </p>
+                <ul>
+                    <li>Mechanické čištění odpadních trubek</li>
+                    <li>Vysokotlaké čištění kanalizace</li>
+                    <li>Detekci a odstranění blokád</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <img src="pipe_8676698.png" alt="Kanalizační přípojky">
+            <h3>Výměna stoupaček a kanalizačních přípojek</h3>
+            <p>Kompletní rekonstrukce stoupaček a přípojek v obytných i komerčních budovách...</p>
+            <a href="#detail4" class="btn-outline toggle-detail">Číst více</a>
+            <div class="service-detail" id="detail4">
+                <p>
+                    Nabízíme profesionální rekonstrukce kanalizačních systémů:
+                </p>
+                <ul>
+                    <li>Výměna starých stoupaček</li>
+                    <li>Opravy prasklých kanalizačních potrubí</li>
+                    <li>Instalace moderních přípojek</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll(".toggle-detail").forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const detail = this.nextElementSibling;
+                detail.classList.toggle("visible");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
